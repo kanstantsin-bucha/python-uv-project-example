@@ -1,7 +1,7 @@
 import pytest
 from httpx import AsyncClient
 
-from svc_example.views import app
+from src.svc_example.views import app
 
 @pytest.mark.asyncio
 async def test_app():
