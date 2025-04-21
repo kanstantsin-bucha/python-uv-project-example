@@ -2,7 +2,7 @@
 
 I am going to learn:
 * how to use UV
-* how to structure project in modern python
+* how to structure a project in modern __Python__
 * how to run tests
 
 ## Structure
