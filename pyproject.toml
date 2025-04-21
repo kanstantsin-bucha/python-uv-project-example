@@ -1,0 +1,32 @@
+[project]
+name = "svc-example"
+version = "0.1.0"
+description = "An example of the modern python project set up"
+readme = "README.md"
+authors = [
+    { name = "Kanstantsin Bucha", email = "kanstantsin.bucha@icloud.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.115.12",
+    "granian>=2.2.5",
+]
+
+[project.scripts]
+svc-example = "svc_example:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.5",
+]
+lint = [
+    "ruff>=0.11.6",
+]
+test = [ 
+    "httpx",
+    "pytest-asyncio",
+]
